@@ -1,0 +1,16 @@
+<!--subpackage-search/pages/search/search.wxml-->
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  show-action
+  input-align="center"
+  bind:cancel="onCancel"
+  background="#4fc08d"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+  right-icon="/images/tabs/search_green.png"
+>
+<view slot="action" bind:tap="onClick">搜索</view>
+</van-search>
+

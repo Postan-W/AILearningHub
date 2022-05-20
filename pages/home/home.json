@@ -1,0 +1,6 @@
+{
+    "usingComponents": {},
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "AINote",
+    "enablePullDownRefresh": true
+}

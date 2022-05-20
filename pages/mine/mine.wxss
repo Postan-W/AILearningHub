@@ -1,0 +1,197 @@
+/* pages/personal/personal.wxss */
+/*box-shadow: 20rpx 20rpx 20rpx 0 rgb(195, 255, 0);*/
+/*position属性：https://blog.csdn.net/Ven21959/article/details/90643831
+  margin取负值：https://www.cnblogs.com/yzmy/p/14525042.html
+*/
+page{
+    background-color: #f5f5f5;
+}
+.personalContainer {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .personalContainer .user-section {
+    height: 400rpx;
+    position: relative;
+    padding: 40rpx 30rpx 0;
+    
+  }
+  .user-section .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    filter: blur(0);
+  }
+  
+  
+  .user-info-box{
+    height: 180rpx;
+    display:flex;
+    align-items:center;
+    position:relative;
+    z-index: 1;
+  
+  }
+  
+  .user-info-box .portrait{
+    width: 130rpx;
+    height: 130rpx;
+    border:5rpx solid #fff;
+    border-radius: 50%;
+  }
+  .user-info-box .username{
+    font-size: 50rpx;
+    color: #000;
+    margin-left: 20rpx;
+  }
+  
+  
+  /* vip-box */
+  .vip-card-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, .55);
+    height: 260rpx;
+    color: #f7d680;
+    border-radius: 20rpx 20rpx 20rpx 20rpx;
+    padding: 30rpx 30rpx 10rpx 30rpx;
+  }
+  
+  .vip-card-box .card-bg{
+    position:absolute;
+    top: 20rpx;
+    right: 0;
+    width: 380rpx;
+    height: 260rpx;
+  }
+
+  .vip-card-box .b-btn{
+    position: absolute;
+    right: 20rpx;
+    top: 30rpx;
+    width: 132rpx;
+    height: 40rpx;
+    text-align: center;
+    line-height: 40rpx;
+    font-size: 22rpx;
+    color: #36343c;
+    border-radius: 20px;
+    /*background: linear-gradient(left, #f9e6af, #ffd465);*/ /*渐变不生效*/
+    background: #f9e6af;
+    z-index: 1;
+  }
+  
+  .vip-card-box .tit {
+    font-size: 22rpx;
+    color: #f7d680;
+    margin-bottom: 28rpx;
+  }
+  .vip-card-box .tit .iconfont{
+    color: #f6e5a3;
+    margin-right: 16rpx;
+  }
+  
+  
+  
+  
+  .vip-card-box .e-m{
+    font-size: 34rpx;
+    margin-top: 10rpx;
+  }
+  .vip-card-box .e-b{
+    font-size: 24rpx;
+    color: #d8cba9;
+    margin-top: 10rpx;
+  }
+  
+  
+  .cover-container{
+    margin-top: -10rpx;
+    padding: 0 30rpx;
+    position:relative;
+    background: #f5f5f5;
+    padding-bottom: 20rpx;
+  }
+  
+  .cover-container .arc{
+    position:absolute;
+    left: 0;
+    top: -34rpx;
+    width: 100%;
+    height: 36rpx;
+  }
+  
+  
+  /* 导航部分 */
+  .cover-container .nav-section {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20rpx 0;
+    justify-content: space-around;
+    border-radius: 30rpx;
+  }
+  .nav-section {
+    box-shadow: 5rpx 5rpx 10rpx rgb(221, 218, 218);
+  }
+  .nav-section .text{
+      font-size: 38rpx;
+      padding-left: 20rpx;
+      color: #4d4b4b;
+  }
+  .nav-section .text2{
+    font-size: 30rpx;
+}
+  
+  .help{
+      margin-top: 20rpx;
+      background-color:#fff;
+      border-radius: 20rpx;
+      padding-top: 10rpx;
+      padding-bottom: 10rpx;
+      box-shadow: 5rpx 5rpx 10rpx rgb(221, 218, 218);
+  }
+  .help .text{
+    font-size: 38rpx;
+    padding-left: 20rpx;
+    color: #4d4b4b;
+}
+.scroll_view{
+    display: flex;
+    margin-top: 15rpx;
+    padding-left: 5rpx;
+    width: 650rpx;
+    height: 120rpx;
+}
+.scroll_view .scroll_view_item{
+    margin-right: 40rpx;
+    display: flex;
+    flex-direction: column;
+}
+.leaving_a_message{
+    border-radius: 15rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    margin-top: 20rpx;
+    background-color: #fff;
+    display: flex;
+    height: 80rpx;
+    align-items: center;/*侧轴上的对齐，当前主轴是横轴*/
+}
+
+.leaving_a_message .part1{
+    width: 50%;
+    padding-left: 20rpx;
+}
+.leaving_a_message .part2{
+    width: 50%;
+    padding-right: 20rpx;
+}
+.leaving_a_message .part2 text{
+    float: right;
+}

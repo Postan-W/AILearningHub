@@ -1,0 +1,8 @@
+/* custom-tab-bar/index.wxss */
+.van-tabbar-item__icon{
+   --tabbar-item-margin-bottom:0;
+}
+
+.van-info {
+    transform: translate(-20%,-20%);
+}

@@ -1,0 +1,29 @@
+<!--custom-tab-bar/index.wxml-->
+<van-tabbar active="{{ active }}" active-color="{{tabColor}}" inactive-color="#000" bind:change="onChange">
+  <van-tabbar-item>
+    <van-icon slot="icon" name="wap-home-o"size="50rpx" />
+    <van-icon slot="icon-active" name="wap-home-o"size="70rpx" color="{{tabColor}}" />
+    首页
+  </van-tabbar-item>
+  <van-tabbar-item>
+    <van-icon slot="icon" name="shop-o"size="50rpx" />
+    <van-icon slot="icon-active" name="shop-o"size="70rpx" color="{{tabColor}}" />
+    市场
+  </van-tabbar-item>
+  <van-tabbar-item>
+    <van-icon slot="icon" name="search"size="50rpx" />
+    <van-icon slot="icon-active" name="search"size="70rpx" color="{{tabColor}}" />
+    发现
+  </van-tabbar-item>
+  <van-tabbar-item>
+    <van-icon slot="icon" name="shopping-cart-o"size="50rpx" />
+    <van-icon slot="icon-active" name="shopping-cart-o"size="70rpx" color="{{tabColor}}" />
+    购物车
+  </van-tabbar-item>
+  <van-tabbar-item >
+    <van-icon slot="icon" name="user-circle-o"size="50rpx" />
+    <van-icon slot="icon-active" name="user-circle-o"size="70rpx" color="{{tabColor}}" />
+    我的
+  </van-tabbar-item>
+</van-tabbar>
+

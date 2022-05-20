@@ -1,0 +1,8 @@
+<!--pages/home/home.wxml-->
+<swiper indicator-dots circular indicator-color="gray" indicator-active-color="white" interval="2000" autoplay>
+    <swiper-item wx:for="{{swiperList}}" wx:key="id">
+        <image src="{{item.image}}"></image>
+    </swiper-item>
+</swiper>
+
+
